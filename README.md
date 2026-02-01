@@ -70,7 +70,6 @@ sudo mv libgmodule* disabled-libraries
 ```
 sudo timedatectl set-local-rtc 1
 ```
-
 ### Default Firefox start page 
 * The tweak below will make the start page the default firefox start page instead of [this](https://fedoraproject.org/start)
 ```
