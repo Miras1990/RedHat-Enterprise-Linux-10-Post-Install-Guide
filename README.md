@@ -47,4 +47,33 @@ sudo rpm -i https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore
 ## DaVinci Resolve (The program works and detects Intel's integrated graphics)
 ```
 * Installation
-sudo dnf install apr
+sudo dnf install apr apr-util mesa-libGLU libxcrypt-compat fuse fuse-libs pango libXt
+unzip DaVinci_Resolve_Studio_20.2.1_Linux.zip
+chmod +x ./DaVinci_Resolve_Studio_20.2.1_Linux.run
+sudo SKIP_PACKAGE_CHECK=1 ./DaVinci_Resolve_Studio_20.2.1_Linux.run -i
+
+* Repair (/opt/resolve/bin/resolve: symbol lookup error: /usr/lib/libpango-1.0.so.0: undefined symbol: g_once_init_leave_pointer):
+cd /opt/resolve/libs
+sudo mkdir disabled-libraries
+sudo mv libglib* disabled-libraries
+sudo mv libgio* disabled-libraries
+sudo mv libgmodule* disabled-libraries 
+```
+
+## Configuring the system and the GNOME graphical environment
+
+### Set Hostname
+* `hostnamectl set-hostname YOUR_HOSTNAME`
+
+### Set UTC Time
+* Used to counter time inconsistencies in dual boot systems
+```
+sudo timedatectl set-local-rtc 1
+```
+
+### Default Firefox start page 
+* The tweak below will make the start page the default firefox start page instead of [this](https://fedoraproject.org/start)
+```
+sudo rm -f /usr/lib64/firefox/browser/defaults/preferences/all-redhat.js
+```
+
