@@ -123,6 +123,8 @@ sudo systemctl start fstrim.timer
 ### Install lm-sensors and detect all sensors
 ```
 sudo dnf install lm_sensors
+sudo modprobe nct6775
+sudo systemctl daemon-reload
 sudo sensors-detect
 ```
 
