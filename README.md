@@ -26,7 +26,7 @@ sudo fwupdmgr update
 
 ## [Intel(R) Graphics Compute Runtime for oneAPI Level Zero and OpenCL(TM) Driver](https://github.com/intel/compute-runtime)
 ```
-sudo dnf install intel-compute-runtime intel-gmmlib intel-igc intel-level-zero intel-ocloc intel-opencl intel-opencl-clang
+sudo dnf install intel-compute-runtime intel-gmmlib intel-igc intel-level-zero intel-ocloc intel-opencl intel-opencl-clang oneapi-level-zero
 ```
 
 ## Media Codecs and H/W Video Acceleration
