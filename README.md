@@ -44,21 +44,24 @@ sudo rpm -i https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore
 ```
 
 ## [DaVinci Resolve](https://www.blackmagicdesign.com/pl/products/davinciresolve)
-```
 * The program works and detects Intel's integrated graphics!
 * Installation
+```
 sudo dnf install apr apr-util mesa-libGLU libxcrypt-compat fuse fuse-libs pango libXt
 unzip DaVinci_Resolve_Studio_20.2.1_Linux.zip
 chmod +x ./DaVinci_Resolve_Studio_20.2.1_Linux.run
 sudo SKIP_PACKAGE_CHECK=1 ./DaVinci_Resolve_Studio_20.2.1_Linux.run -i
-
+```
 * Repair (/opt/resolve/bin/resolve: symbol lookup error: /usr/lib/libpango-1.0.so.0: undefined symbol: g_once_init_leave_pointer):
+```
 cd /opt/resolve/libs
 sudo mkdir disabled-libraries
 sudo mv libglib* disabled-libraries
 sudo mv libgio* disabled-libraries
 sudo mv libgmodule* disabled-libraries 
 ```
+[Source](https://www.dedoimedo.com/computers/davinci-resolve-ubuntu-24-04.html)
+
 
 ## [DeepCool Digital for Linux](https://github.com/Nortank12/deepcool-digital-linux)
 
