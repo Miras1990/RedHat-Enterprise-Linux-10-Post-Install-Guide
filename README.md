@@ -60,7 +60,7 @@ sudo mv libgio* disabled-libraries
 sudo mv libgmodule* disabled-libraries 
 ```
 
-## DeepCool Digital for Linux (https://github.com/Nortank12/deepcool-digital-linux)
+## [DeepCool Digital for Linux](https://github.com/Nortank12/deepcool-digital-linux)
 
 * Automatic Start with Systemd 
 ```
