@@ -43,8 +43,9 @@ sudo dnf install curl cabextract xorg-x11-font-utils fontconfig
 sudo rpm -i https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm
 ```
 
-## DaVinci Resolve (The program works and detects Intel's integrated graphics)
+## [DaVinci Resolve](https://www.blackmagicdesign.com/pl/products/davinciresolve)
 ```
+* The program works and detects Intel's integrated graphics!
 * Installation
 sudo dnf install apr apr-util mesa-libGLU libxcrypt-compat fuse fuse-libs pango libXt
 unzip DaVinci_Resolve_Studio_20.2.1_Linux.zip
