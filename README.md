@@ -103,10 +103,8 @@ sudo rm -f /usr/lib64/firefox/browser/defaults/preferences/all-redhat.js
 ```
 ### Enable VAAPI in Firefox "about:config"
 ```
-media.ffmpeg.vaapi.enabled  true
 media.navigator.mediadatadecoder_vpx_enabled  true
 layers.acceleration.force-enabled true
-gfx.webrender.enabled true
 gfx.webrender.all true
 ```
 
