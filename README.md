@@ -60,8 +60,6 @@ sudo mv libglib* disabled-libraries
 sudo mv libgio* disabled-libraries
 sudo mv libgmodule* disabled-libraries 
 ```
-[Source](https://www.dedoimedo.com/computers/davinci-resolve-ubuntu-24-04.html)
-
 
 ## [DeepCool Digital for Linux](https://github.com/Nortank12/deepcool-digital-linux)
 
